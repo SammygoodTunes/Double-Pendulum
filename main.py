@@ -4,7 +4,6 @@ Author: SammygoodTunes
 Version: 1.0
 '''
 
-
 import math
 import pygame
 import random

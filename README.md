@@ -6,10 +6,9 @@ Explanation:
 
 The double pendulum is a set of two pendulums connected to each other.
 Adding an immense amount of formulas for motion and acceleration, the double pendulum can create some fascinatingly choatic movements.
-Each pattern it creates is unique every time.
 
-My version of the double pendulum is trash. But, it does work.
-I'll probably develop on it more, probably quadruple-check the formulas for any errors.
+Each pattern it creates is unique every time, and is tracked using red lines.
+The default angle upon launch is randomised.
 
 
 Controls:
@@ -42,3 +41,6 @@ Developed by: SammygoodTunes
 
 
 Library(ies) used: Pygame 2.0.1
+
+
+Version: 1.0

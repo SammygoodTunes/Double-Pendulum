@@ -1,8 +1,8 @@
 # Fibonacci-Word-Fractal
 Recreation of the Double Pendulum.
 
-Explanation:
-===================
+## Explanation:
+
 
 The double pendulum is a set of two pendulums connected to each other.
 Adding an immense amount of formulas for motion and acceleration, the double pendulum can create some fascinatingly choatic movements.

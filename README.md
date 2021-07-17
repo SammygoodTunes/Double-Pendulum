@@ -12,7 +12,7 @@ The default angle upon launch is randomised.
 
 ## Controls:
 
-None
+[Escape] -> Reset
 
 
 ## Installation information:

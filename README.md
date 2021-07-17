@@ -3,7 +3,6 @@ Recreation of the Double Pendulum.
 
 ## Explanation:
 
-
 The double pendulum is a set of two pendulums connected to each other.
 Adding an immense amount of formulas for motion and acceleration, the double pendulum can create some fascinatingly choatic movements.
 
@@ -11,14 +10,12 @@ Each pattern it creates is unique every time, and is tracked using red lines.
 The default angle upon launch is randomised.
 
 
-Controls:
-===================
+## Controls:
 
 None
 
 
-Installation information:
-===================
+##Installation information:
 
 A "requirements" text file is provided within the repository.
 
@@ -34,8 +31,7 @@ To install the necessary library(ies) to run the script:
 3- Install the library(ies) from the "requirements.txt" file (pip install -r requirements.txt)
 
 
-Development information:
-===================
+## Development information:
 
 Developed by: SammygoodTunes
 

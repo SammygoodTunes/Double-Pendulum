@@ -1,12 +1,12 @@
 '''
 Title: Double Pendulum
 Author: SammygoodTunes
-Version: 1.0
+Version: 1.1
 '''
 
 import math
 import pygame
-import random
+import random as r
 
 pygame.init()
 
@@ -31,7 +31,7 @@ class Simulation:
         self.p2_x, self.p2_y = 0, 0
         self.p1_length, self.p2_length = 125, 125
         self.p1_mass, self.p2_mass = 10, 10
-        self.p1_angle, self.p2_angle = math.pi/random.uniform(1, 8), math.pi/random.uniform(1, 8)
+        self.p1_angle, self.p2_angle = r.randint(-16, 16) + math.pi/r.uniform(1, 8), r.randint(-16, 16) + math.pi/r.uniform(1, 8)
         self.p1_velocity, self.p2_velocity = 0, 0
         self.p1_acceleration, self.p2_acceleration = 0, 0
         self.prev = [self.px, self.py, self.p1_x, self.p1_y, self.p2_x, self.p2_y]
@@ -93,6 +93,10 @@ def main():
         n5 = sim.p2_length * (2 * sim.p1_mass + sim.p2_mass - sim.p2_mass * math.cos(2 * sim.p1_angle - 2 * sim.p2_angle))
         sim.p2_acceleration = (n1 * (n2 + n3 + n4)) / n5
 
+        print("acc:", sim.p1_acceleration, sim.p2_acceleration)
+        print("vel:", sim.p1_velocity, sim.p2_velocity)
+        print("ang:", sim.p1_angle, sim.p2_angle)
+
         sim.p1_velocity += sim.p1_acceleration
         sim.p2_velocity += sim.p2_acceleration
         sim.p1_angle += sim.p1_velocity
@@ -101,6 +105,15 @@ def main():
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 sim.stop()
+
+            if e.type == pygame.KEYDOWN:
+                if e.key == pygame.K_ESCAPE:
+                    sim.path_surface.fill((0, 0, 0), (0, 0, window.get_size()[0], window.get_size()[1]))
+                    window = Window()
+                    sim = Simulation()
+                    sim.set_path_surface(window)
+
+
 
         window.clock.tick(60)
         pygame.display.flip()

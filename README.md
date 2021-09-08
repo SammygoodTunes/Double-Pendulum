@@ -1,4 +1,4 @@
-# Fibonacci-Word-Fractal
+# Double-Pendulum
 Recreation of the Double Pendulum.
 
 ## Explanation:

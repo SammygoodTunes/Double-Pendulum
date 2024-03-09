@@ -33,18 +33,6 @@ A "requirements" text file is provided within the repository.
   pip install -r requirements.txt
   ```
 
-
-### To install the game without necessary libraries:
-
-1- Locate the installation file "DoublePendulum-X.X-Installer.exe"
-
-
-2- Launch the installation file and follow the steps within the UI of the installer
-
-
-3- The installation file should have extracted all the necessary resources including the EXE file, that you can run without needing Python or any of the libraries used during development
-
-
 ## Development information:
 
 Developed by: SammygoodTunes

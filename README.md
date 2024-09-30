@@ -1,5 +1,5 @@
 # Double-Pendulum
-Recreation of the Double Pendulum.
+Replica of the Double Pendulum.
 
 ## Explanation:
 
